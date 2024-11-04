@@ -24,6 +24,26 @@
         marquee {
             color: #ff9900;
         }
+
+        #toggle-music {
+            margin-top: 20px;
+            padding: 8px 15px;
+            background: #d3d3d3;
+            border: 2px outset #a0a0a0;
+            color: #000;
+            font-family: 'Tahoma', sans-serif;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        #toggle-music:hover {
+            background: #c0c0c0;
+        }
+
+        #toggle-music:active {
+            border: 2px inset #a0a0a0;
+        }
     </style>
 </head>
 
@@ -65,10 +85,29 @@
             <source src="thefatrat-unity-lofi.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
+        <button id="toggle-music">Toggle Music</button>
         <script>
-            document.body.addEventListener('click', function() {
-                const audio = document.getElementById('background-music');
-                audio.play();
+            const audio = document.getElementById('background-music');
+            let isPlaying = false;
+
+            document.body.addEventListener('click', function () {
+                if (!isPlaying) {
+                    audio.play();
+                    isPlaying = true;
+                    document.getElementById('toggle-music').textContent = 'Turn Off Music';
+                }
+            });
+
+            document.getElementById('toggle-music').addEventListener('click', function () {
+                if (isPlaying) {
+                    audio.pause();
+                    isPlaying = false;
+                    this.textContent = 'Turn On Music';
+                } else {
+                    audio.play();
+                    isPlaying = true;
+                    this.textContent = 'Turn Off Music';
+                }
             });
         </script>
     </main>
