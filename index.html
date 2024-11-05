@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kevin Schmidlin</title>
-        <style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Schmidlin</title>
+    <style>
         body {
             background-color: #FFFFCC;
             font-family: 'Comic Sans MS', sans-serif;
             color: #333;
+            background-image: url('bgpastelblocks.gif'); /* Add your image URL here */
+            background-repeat: repeat; /* Repeat the image across the page */
+            background-size: auto; /* Keep original image size */
+            background-attachment: fixed; /* Keeps the image fixed while scrolling */
         }
 
         .container {
             border: 2px outset #FFFFFF;
             padding: 20px;
             margin: 20px;
-            background-color: #FFC89E;
+            background-color: rgba(255, 200, 158, 0.8); /* Slight transparency to let the background show through */
         }
 
         h1 {
             color: #73AF20;
-                      text-align: center;
+            text-align: center;
         }
-        
+
         h2 {
             color: #8080FF;
         }
@@ -57,67 +61,67 @@
             border: 2px inset #a0a0a0;
         }
     </style>
-    </head>
+</head>
 
-    <body>
-        <marquee direction="right"><i>Whoosh! 🌪 </i>️</marquee>
-        <header>
-            <h1>Welcome!</h1>
-        </header>
-        <div class="container">
-            <p>This website highlights my publicly available professional work.
-                Why the simple design?</p>
-            <ul>
-                <li><b>Accessible</b>: Not everyone has high-speed nbn or 5G
-                    internet. You won't find clunky images, videos,
-                    or advertisements here.</li>
-                <li><b>Nostalgic</b>: I wanted to capture the charm of the early
-                    2000s internet, sparking memories
-                    of simpler times that many, myself included, hold dear.</li>
-                <li><b>Refreshing</b>: In contrast to today’s dopamine-driven
-                    websites, the simple design encourages your
-                    brain to slow down, offering a experience that helps reduce
-                    the noise and distractions of the modern
-                    internet.</li>
-                <li style="color:  #FFC89E;"><b>The Real Reason</b>: It's easy
-                    to code lol.</li>
-            </ul>
-            <h2>Whoami</h2>
-            <p>I am a general nerd with a love for video games, anime, and all
-                things cyber. These days, I focus mostly on
-                cyber
-                defence & strategy.</p>
+<body>
+    <marquee direction="right"><i>Whoosh! 🌪️</i></marquee>
+    <header>
+        <h1>Welcome!</h1>
+    </header>
+    <div class="container">
+        <p>This website highlights my publicly available professional work.
+            Why the simple design?</p>
+        <ul>
+            <li><b>Accessible</b>: Not everyone has high-speed nbn or 5G
+                internet. You won't find clunky images, videos,
+                or advertisements here.</li>
+            <li><b>Nostalgic</b>: I wanted to capture the charm of the early
+                2000s internet, sparking memories
+                of simpler times that many, myself included, hold dear.</li>
+            <li><b>Refreshing</b>: In contrast to today’s dopamine-driven
+                websites, the simple design encourages your
+                brain to slow down, offering an experience that helps reduce
+                the noise and distractions of the modern
+                internet.</li>
+            <li style="color:  #FFC89E;"><b>The Real Reason</b>: It's easy
+                to code lol.</li>
+        </ul>
+        <h2>Whoami</h2>
+        <p>I am a general nerd with a love for video games, anime, and all
+            things cyber. These days, I focus mostly on
+            cyber
+            defence & strategy.</p>
 
-            <h2>Conferences</h2>
-            <p>List of conferences I've attended.</p>
-            <ul>
-                <li>AISA PerthSec 2024</li>
-                <li>BSides Canberra 2024</li>
-                <li>FIRSTCON24 Fukuoka (Virtual)</li>
-                <li>ASIA PerthSec 2023</li>
-                <li>BSides Perth 2023</li>
-                <li>Cardano Summit Perth 2022</li>
-            </ul>
-            <h2>Acknowledgements</h2>
-            <ul>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=EXfFBEuCAr0">you
-                        STILL need a website RIGHT NOW!! (yes, even in
-                        2024)</a>
-                </li>
-                <li>
-                    <a href="https://www.cameronsworld.net/">Cameron's World</a>
-                </li>
-                <li>
-                    <a href="https://chatgpt.com/">ChatGPT</a>
-                </li>
-            </ul>
-            <audio id="background-music">
-                <source src="thefatrat-unity-lofi.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <button id="toggle-music">Turn On Music</button>
-            <script>
+        <h2>Conferences</h2>
+        <p>List of conferences I've attended.</p>
+        <ul>
+            <li>AISA PerthSec 2024</li>
+            <li>BSides Canberra 2024</li>
+            <li>FIRSTCON24 Fukuoka (Virtual)</li>
+            <li>ASIA PerthSec 2023</li>
+            <li>BSides Perth 2023</li>
+            <li>Cardano Summit Perth 2022</li>
+        </ul>
+        <h2>Acknowledgements</h2>
+        <ul>
+            <li>
+                <a href="https://www.youtube.com/watch?v=EXfFBEuCAr0">you
+                    STILL need a website RIGHT NOW!! (yes, even in
+                    2024)</a>
+            </li>
+            <li>
+                <a href="https://www.cameronsworld.net/">Cameron's World</a>
+            </li>
+            <li>
+                <a href="https://chatgpt.com/">ChatGPT</a>
+            </li>
+        </ul>
+        <audio id="background-music">
+            <source src="thefatrat-unity-lofi.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <button id="toggle-music">Turn On Music</button>
+        <script>
             const audio = document.getElementById('background-music');
             let isPlaying = false;
 
@@ -133,6 +137,6 @@
                 }
             });
         </script>
-        </body>
+</body>
 
-    </html>
+</html>
