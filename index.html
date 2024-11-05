@@ -7,29 +7,23 @@
     <title>Kevin Schmidlin</title>
     <style>
         body {
-            background-color: #ffccff;
+            background-color: #FFC89E;
             font-family: 'Comic Sans MS', sans-serif;
             color: #333;
         }
 
         h1 {
-            color: #ff0000;
+            color: #8080FF;
             text-align: center;
         }
 
         a {
-            color: #0000ff;
+            color: #FF0080;
             text-decoration: underline;
         }
 
         marquee {
-            color: #ff9900;
-        }
-        .container {
-            border: 2px solid #00ff00;
-            padding: 20px;
-            margin: 20px;
-            background-color: #ffffff;
+            color: #D8873C;
         }
 
         #toggle-music {
@@ -55,11 +49,11 @@
 </head>
 
 <body>
-    <marquee>Whoosh! 🌪️</marquee>
+    <marquee> <i>Whoosh! 🌪 </i>️</marquee>
     <header>
         <h1>Welcome!</h1>
     </header>
-    <div class="container">
+    <main>
         <p>This website highlights my publicly available professional work.
             Why the simple design?</p>
         <ul>
@@ -88,23 +82,15 @@
                     2024)</a>
             </li>
         </ul>
-        </div>
+    </main>
         <audio id="background-music">
             <source src="thefatrat-unity-lofi.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-        <button id="toggle-music">Toggle Music</button>
+        <button id="toggle-music">Turn On Music</button>
         <script>
             const audio = document.getElementById('background-music');
             let isPlaying = false;
-
-            document.body.addEventListener('click', function () {
-                if (!isPlaying) {
-                    audio.play();
-                    isPlaying = true;
-                    document.getElementById('toggle-music').textContent = 'Turn Off Music';
-                }
-            });
 
             document.getElementById('toggle-music').addEventListener('click', function () {
                 if (isPlaying) {
@@ -118,7 +104,6 @@
                 }
             });
         </script>
-    </main>
 </body>
 
 </html>
