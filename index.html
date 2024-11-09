@@ -169,7 +169,7 @@
             <source src="thefatrat-unity-lofi.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-        <button id="toggle-music">Turn On Music</button>
+        <button id="toggle-music">⏵︎</button>
         <script>
             const audio = document.getElementById('background-music');
             let isPlaying = false;
@@ -178,11 +178,11 @@
                 if (isPlaying) {
                     audio.pause();
                     isPlaying = false;
-                    this.textContent = 'Turn On Music';
+                    this.textContent = '⏵︎';
                 } else {
                     audio.play();
                     isPlaying = true;
-                    this.textContent = 'Turn Off Music';
+                    this.textContent = '⏸︎';
                 }
             });
         </script>
