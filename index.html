@@ -10,12 +10,9 @@
             background-color: #222222;
             font-family: monospace;
             color: #cccccc;
-            margin: 0;
-            /* Remove default body margin */
-            padding: 0;
-            /* Remove default body padding */
-            position: relative;
-            /* Make sure the body can be used as a reference for absolute positioning */
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+            position: relative; /* Ensure the body is the reference for absolute positioning */
         }
 
         .container {
@@ -42,12 +39,9 @@
         }
 
         #toggle-music {
-            position: absolute;
-            /* Position it relative to the body */
-            top: 20px;
-            /* 20px from the top of the page */
-            right: 20px;
-            /* 20px from the right of the page */
+            position: absolute; /* Position the button relative to the body */
+            top: 20px; /* 20px from the top */
+            right: 20px; /* 20px from the right */
             padding: 8px 15px;
             background: #d3d3d3;
             border: 2px outset #a0a0a0;
@@ -64,6 +58,26 @@
 
         #toggle-music:active {
             border: 2px inset #a0a0a0;
+        }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            #toggle-music {
+                padding: 6px 12px; /* Smaller padding */
+                font-size: 12px; /* Smaller text size */
+                top: 10px; /* Adjust top margin for mobile */
+                right: 10px; /* Adjust right margin for mobile */
+            }
+        }
+
+        /* Media Query for Very Small Mobile Devices (like phones in portrait) */
+        @media (max-width: 480px) {
+            #toggle-music {
+                padding: 5px 10px; /* Further reduce padding */
+                font-size: 10px; /* Smaller text size */
+                top: 5px; /* Even smaller top margin */
+                right: 5px; /* Even smaller right margin */
+            }
         }
     </style>
 </head>
