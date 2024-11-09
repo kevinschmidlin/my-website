@@ -154,11 +154,11 @@
                 if (isPlaying) {
                     audio.pause();
                     isPlaying = false;
-                    this.textContent = 'Play';
+                    this.textContent = '<i class="fa fa-play">';
                 } else {
                     audio.play();
                     isPlaying = true;
-                    this.textContent = 'Pause';
+                    this.textContent = '<i class="fa fa-pause"></i>';
                 }
             });
         </script>
