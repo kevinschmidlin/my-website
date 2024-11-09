@@ -10,9 +10,6 @@
             background-color: #222222;
             font-family: monospace;
             color: #cccccc;
-            margin: 0; /* Remove default body margin */
-            padding: 0; /* Remove default body padding */
-            position: relative; /* Ensure the body is the reference for absolute positioning */
         }
 
         .container {
@@ -35,15 +32,17 @@
         }
 
         #toggle-music {
-            position: absolute; /* Position the button relative to the body */
-            top: 20px; /* 20px from the top */
-            right: 20px; /* 20px from the right */
+            position: absolute;
+            /* Position the button relative to the body */
+            top: 20px;
+            /* 20px from the top */
+            right: 20px;
+            /* 20px from the right */
             padding: 8px 15px;
             background: #d3d3d3;
             border: 2px outset #a0a0a0;
             color: #000;
             font-family: 'Tahoma', sans-serif;
-            font-size: 14px;
             cursor: pointer;
             transition: background 0.2s;
         }
@@ -54,26 +53,6 @@
 
         #toggle-music:active {
             border: 2px inset #a0a0a0;
-        }
-
-        /* Media Query for Mobile Devices */
-        @media (max-width: 768px) {
-            #toggle-music {
-                padding: 6px 12px; /* Smaller padding */
-                font-size: 12px; /* Smaller text size */
-                top: 10px; /* Adjust top margin for mobile */
-                right: 10px; /* Adjust right margin for mobile */
-            }
-        }
-
-        /* Media Query for Very Small Mobile Devices (like phones in portrait) */
-        @media (max-width: 480px) {
-            #toggle-music {
-                padding: 5px 10px; /* Further reduce padding */
-                font-size: 10px; /* Smaller text size */
-                top: 5px; /* Even smaller top margin */
-                right: 5px; /* Even smaller right margin */
-            }
         }
     </style>
 </head>
@@ -162,10 +141,11 @@
             </li>
         </ul>
         <audio id="background-music" loop>
-            <source src="Context Sensitive - Weekly Loops Season 2 (Special Edition) - 56 63 - Comfy (loopable).mp3" type="audio/mpeg">
+            <source src="Context Sensitive - Weekly Loops Season 2 (Special Edition) - 56 63 - Comfy (loopable).mp3"
+                type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-        <button id="toggle-music">On</i></button>
+        <button id="toggle-music">Play</i></button>
         <script>
             const audio = document.getElementById('background-music');
             audio.volume = 0.2;
@@ -175,11 +155,11 @@
                 if (isPlaying) {
                     audio.pause();
                     isPlaying = false;
-                    this.textContent = 'On';
+                    this.textContent = 'Play';
                 } else {
                     audio.play();
                     isPlaying = true;
-                    this.textContent = 'Off';
+                    this.textContent = 'Pause';
                 }
             });
         </script>
