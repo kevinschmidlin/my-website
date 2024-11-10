@@ -1,6 +1,6 @@
 const audio = document.getElementById('background-music');
 audio.volume = 0.1;
-let isPlaying = true;
+let isPlaying = false;
 
 document.getElementById('toggle-music').addEventListener('click', function () {
     if (isPlaying) {
@@ -10,6 +10,11 @@ document.getElementById('toggle-music').addEventListener('click', function () {
     } else {
         audio.play();
         isPlaying = true;
-        this.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
+
+        if (this.innerHTML == '<i class="fa-solid fa-volume-xmark"></i>') {
+            this.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+        } else {
+            this.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
+        }
     }
 });
