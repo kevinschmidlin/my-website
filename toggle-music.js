@@ -6,10 +6,10 @@ document.getElementById('toggle-music').addEventListener('click', function () {
     if (isPlaying) {
         audio.pause();
         isPlaying = false;
-        this.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+        this.innerHTML = '<i class="fa fa-play"></i>';
     } else {
         audio.play();
         isPlaying = true;
-        this.innerHTML = '<i class="fa-solid fa-volume-off"></i>';
+        this.innerHTML = '<i class="fa fa-pause"></i>';
     }
 });
