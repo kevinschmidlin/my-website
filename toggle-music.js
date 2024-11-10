@@ -5,11 +5,11 @@ let isPlaying = false;
 document.getElementById('toggle-music').addEventListener('click', function () {
     if (isPlaying) {
         audio.pause();
-        isPlaying = false;
+        isPlaying = true;
         this.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
     } else {
         audio.play();
-        isPlaying = true;
+        isPlaying = false;
         this.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
     }
 });
