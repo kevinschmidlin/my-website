@@ -1,5 +1,4 @@
 const audio = document.getElementById('background-music');
-audio.volume = 0.1;
 let isPlaying = false;
 
 // Set initial button state
