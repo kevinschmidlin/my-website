@@ -2,19 +2,18 @@ const audio = document.getElementById('background-music');
 audio.volume = 0.1;
 let isPlaying = false;
 
-document.getElementById('toggle-music').addEventListener('click', function () {
+// Set initial button state
+const musicButton = document.getElementById('toggle-music');
+musicButton.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>'; // Default state: volume off
+
+musicButton.addEventListener('click', function () {
     if (isPlaying) {
         audio.pause();
         isPlaying = false;
-        this.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+        musicButton.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>'; // Volume off
     } else {
         audio.play();
         isPlaying = true;
-
-        if (this.innerHTML == '<i class="fa-solid fa-volume-xmark"></i>') {
-            this.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
-        } else {
-            this.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
-        }
+        musicButton.innerHTML = '<i class="fa-solid fa-volume-high"></i>'; // Volume high
     }
 });
