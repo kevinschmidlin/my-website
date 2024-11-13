@@ -43,11 +43,20 @@ a {
     border: 2px inset #a0a0a0;
 }
 
-.scrolling-text {
-    animation: scroll 10s linear infinite;
-}
-
-@keyframes scroll {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-}
+        /* Makes the animation pause on hover */
+        .moving-text:hover{
+            animation-play-state: paused;
+        }
+ 
+        /* The animation */
+        @keyframes marquee{
+            0%{transform: translateX(100%);}
+            100%{transform: translateX(-100%);}
+        }
+ 
+        /* media query to enable animation for only those who want it */
+        @media (prefers-reduced-motion: no-preference) {
+            .moving-text{
+                animation: marquee 15s linear infinite;
+            }
+        }
