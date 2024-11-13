@@ -7,7 +7,7 @@ const musicButton = document.getElementById('toggle-music');
 
 // Set up the click event listener for toggling music
 musicButton.addEventListener('click', function () {
-    if (isPlaying) {
+    if (isPlaying == true) {
         // Pause the music and update the button icon
         audio.pause();
         isPlaying = false;
