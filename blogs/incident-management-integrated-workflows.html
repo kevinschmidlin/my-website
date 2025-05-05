@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Whiteboards to Integrated Workflows | kevinschmidlin</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="https://kit.fontawesome.com/ce7979842a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <!-- same playful extras ------------------------------------>
+    <script src="../oneko.js" async></script>
+
+    <audio id="background-music" loop>
+        <source src="../Context Sensitive - Weekly Loops Season 2 (Special Edition) - 56 63 - Comfy (loopable).mp3"
+            type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <button id="toggle-music"><i class="fa-solid fa-volume-xmark"></i></button>
+    <script src="../toggle-music.js" defer></script>
+
+    <!-- site header ------------------------------------------->
+    <header>
+        <h1><a href="../index.html" style="text-decoration:none; color:inherit;">kevinschmidlin</a></h1>
+    </header>
+
+    <!-- MAIN CONTENT ----------------------------------------->
+    <main class="container">
+        <h2>From Whiteboards to Integrated Workflows: A Modern Journey in Incident Management</h2>
+        <p><small>05 May 2025 • 4 min read</small></p>
+        <p>
+        <h3>humble beginings</h3>
+        In the early days of security operations, incident response revolved around a single room, a
+        whiteboard, and a handful of analysts who could shout updates across a desk. Evidence lived on network
+        shares, timelines were scribbled with dry-erase pens, and coordination was effortless—until teams began
+        working across time zones. Suddenly hand-offs spanned across regions, leadership expected real-time updates,
+        and a process once designed for a pirate crew buckled under a grand line.
+        <img src="merry.jpg" alt="merry">
+
+        <h3>one small step for man</h3>
+        The first attempt to digitise the war-room came in the form of a proprietary incident response solution. On
+        paper it seemed ideal: secure, with built-in case management and a incident wizard? 🧙 In practice, however,
+        three
+        problems
+        emerged. Licensing was sold per user, so only senior analysts could log in; everyone else waited for
+        status emails. Integration with the SIEM and threat-intelligence feeds was nonexistent, forcing analysts to
+        copy
+        IOCs by hand. And worst of all, the <a href="https://www.youtube.com/watch?v=8vfbVVkwdQw&t=255s">crappy user
+            interface</a>
+        turned a promised
+        "easy-to-use platform" into a single point of frustration. The
+        tool survived, but only as a repository for post-incident documentation.
+        <img src="crappy-ui.jpg" alt="crappy ui">
+
+        Frustration with the proprietary solution led the team to an open-source counterpart. Because it was
+        licence-free, every responder—and every stakeholder—could collaborate in the same space. The platform
+        shipped with connectors that enriched artefacts automatically, so as soon as a hash or domain landed in the
+        case, additional context appeared in seconds. Chat-ops integration meant that the conversation around the
+        incident, complete with time stamps and threaded actions, was preserved as evidence. A cryptographic vault
+        hashed every upload, providing immutability and defensible chain-of-custody. The honeymoon period, however,
+        revealed two familiar truths about open source: bugs arrive unannounced, and expertise can bottleneck around
+        a single engineer. Report generators defaulted to the wrong language, on-premise deployment limited the use
+        of cloud extensions, and when the resident SME took leave, maintenance became backlog.
+
+        <h3>one giant leap for mainkind</h3>
+        With operational maturity rising, leadership began asking for a platform that could handle incident
+        response under one umbrella—supported by a someone that
+        answers the phone at three a.m. The natural next step was an enterprise solution equipped
+        with a major-incident module. Because it shares data with the broader department, security incidents could
+        automatically inherit asset information, maintenance windows, and custodian details. Robust APIs could allow
+        alerts from the SIEM to open tickets instantly, while chat integrations preserve the conversational timeline
+        without manual exports.
+
+        <h3>lessons learned</h3>
+        <ul>
+            <li><strong>Plan for growth</strong>, not the current headcount.</li>
+            <li><strong>Prioritise integration</strong>, or risk losing time and context.</li>
+            <li><strong>Treat chats as evidence</strong>, with export and retention plans.</li>
+        </ul>
+
+        <h3>closing thoughts</h3>
+        Incident management is not a destination but an operating rhythm. The evolution from dry-erase scribbles to
+        an open-source workhorse and, soon, to an integrated enterprise suite shows that tools matter, yet
+        adaptability matters more. The wisest advice from the journey is deceptively simple: choose the platform
+        that makes the right action the easiest action, and keep your playbooks portable—you will need them when the
+        next solution comes along.
+        </p>
+        <hr>
+        <p>
+            <a href="../index.html#blog">&larr; back to blog list</a>
+        </p>
+    </main>
+</body>
+
+</html>

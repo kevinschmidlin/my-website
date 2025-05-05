@@ -5,9 +5,10 @@ body {
 }
 
 .container {
-    padding: 20px;
-    margin: 20px;
-}
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }  
 
 h1 {
     color: #50f148;
@@ -21,6 +22,13 @@ h2 {
 a {
     color: #a1ac25;
     text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 8px;
 }
 
 #toggle-music {
