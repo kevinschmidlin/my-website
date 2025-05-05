@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>why I built this site | kevinschmidlin</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="https://kit.fontawesome.com/ce7979842a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <!-- same playful extras ------------------------------------>
+    <script src="../oneko.js" async></script>
+
+    <audio id="background-music" loop>
+        <source src="../Context Sensitive - Weekly Loops Season 2 (Special Edition) - 56 63 - Comfy (loopable).mp3"
+            type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <button id="toggle-music"><i class="fa-solid fa-volume-xmark"></i></button>
+    <script src="../toggle-music.js" defer></script>
+
+    <!-- site header ------------------------------------------->
+    <header>
+        <h1><a href="../index.html" style="text-decoration:none; color:inherit;">kevinschmidlin</a></h1>
+    </header>
+
+    <!-- MAIN CONTENT ----------------------------------------->
+    <main class="container">
+        <h2>From Whiteboards to Integrated Workflows: A Modern Journey in Incident Management</h2>
+        <p><small>05 May 2025 • 4 min read</small></p>
+        <p>
+            In the early days of security operations, incident response revolved around a single room, a
+            whiteboard, and a handful of analysts who could shout updates across a desk. Evidence lived on network
+            shares, timelines were scribbled with dry-erase pens, and coordination was effortless—until teams began
+            working across time zones. Suddenly hand-offs spanned continents, leadership expected real-time updates,
+            and a process designed for a boutique crew strained under global scale.
+
+            The first attempt to digitise the war-room came in the form of a proprietary incident-response platform
+            intended to replace paper logs. On paper it seemed ideal: workflow templates, evidence linking, and a
+            built-in reporting engine. In practice, three roadblocks emerged. Licensing was sold per user, so only the
+            core responders could log in; everyone else waited for status emails. Integration with the security
+            information and event management (SIEM) platform and threat-intelligence feeds was either clumsy or
+            nonexistent, forcing analysts to copy indicators by hand. Worst of all, the interface slowed to a crawl
+            during live incidents, turning a promised “single pane of glass” into a single point of frustration. The
+            tool survived, but only as a repository for post-incident documentation.
+
+            Frustration with the proprietary solution led the team to an open-source platform. Because it was
+            licence-free, every responder—and every stakeholder—could collaborate in the same space. The platform
+            shipped with connectors that enriched artefacts automatically, so as soon as a hash or domain landed in the
+            case, additional context appeared in seconds. Chat-ops integration meant that the conversation around the
+            incident, complete with time stamps and threaded actions, was preserved as evidence. A cryptographic vault
+            hashed every upload, providing immutability and defensible chain-of-custody. The honeymoon period, however,
+            revealed two familiar truths about open source: bugs arrive unannounced, and expertise can bottleneck around
+            a single engineer. Report generators defaulted to the wrong language, on-premise deployment limited the use
+            of cloud extensions, and when the resident expert took leave, patches waited in the queue.
+
+            With operational maturity rising, leadership began asking for a platform that could handle incident
+            response, service management, change control, and audit under one umbrella—supported by a vendor that
+            answers the phone at three a.m. The natural next step was an enterprise IT-service-management suite equipped
+            with a major-incident module. Because it shares data with the broader service desk, security incidents
+            automatically inherit asset information, maintenance windows, and ownership details. Robust APIs allow
+            alerts from the SIEM to open tickets instantly, while chat integrations preserve the conversational timeline
+            without manual exports. The pilot environment is live, and the final decision—whether to migrate years of
+            historical cases into the new system or archive them for compliance—will follow a data-retention workshop
+            later this quarter.
+
+            Not every challenge involves ransomware or zero-days. A recent spate of unexplained peripheral disconnects,
+            traced in part to a new operating-system build, produced a flurry of tickets that competed for the same
+            incident-response capacity as higher-severity events. The episode reminded the team that routine platform
+            issues travel the same pipelines as headline breaches, and that a mature process must scale gracefully in
+            both directions.
+
+        <h3>lessons learned</h3>
+        <ul>
+            <li><strong>Plan for growth</strong>, not the current headcount.</li>
+            <li><strong>Demand integration</strong>, or risk losing time and context.</li>
+            <li><strong>Treat chats as evidence</strong>, with export and retention plans.</li>
+        </ul>
+
+        Incident management is not a destination but an operating rhythm. The evolution from dry-erase scribbles to
+        an open-source workhorse and, soon, to an integrated enterprise suite shows that tools matter, yet
+        adaptability matters more. The wisest advice from the journey is deceptively simple: choose the platform
+        that makes the right action the easiest action, and keep your playbooks portable—you will need them when the
+        next solution comes along.
+        </p>
+        <h3>nostalgia hits different</h3>
+        <p>Remember dial-up? Remember blinking tags? I do, and I
+            wanted that charm …</p>
+        <!-- keep adding <h3>, <p>, <ul> exactly like on index -->
+        <hr>
+        <!-- simple navigation links --------------------------->
+        <p>
+            <a href="../index.html#blog">&larr; back to blog list</a>
+        </p>
+    </main>
+</body>
+
+</html>
