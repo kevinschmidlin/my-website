@@ -45,7 +45,7 @@
         emerged. Licencing was sold per user, so only senior analysts could log in; everyone else waited for
         status emails. Integration with the SIEM and threat intelligence feeds was non-existent, forcing analysts to
         copy
-        IOCs by hand. And worst of all, the <a href="https://www.youtube.com/watch?v=8vfbVVkwdQw&t=255s">crappy user
+        IOCs by hand. And worst of all, the <a href="https://www.youtube.com/watch?v=8vfbVVkwdQw">crappy user
             interface</a>
         turned a promised
         "easy-to-use platform" into a single point of frustration. The
