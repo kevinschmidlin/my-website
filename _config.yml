@@ -1,0 +1,2 @@
+# This makes foo.html → /foo/  (and blog posts → /blog/slug/)
+permalink: pretty
