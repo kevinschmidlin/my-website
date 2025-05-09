@@ -1,5 +1,6 @@
 // Get the audio element and set the initial volume
 const audio = document.getElementById('background-music');
+audio.volume = 0.3;
 let isPlaying = false;
 
 // Get the music button
