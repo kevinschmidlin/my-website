@@ -19,8 +19,17 @@ h2 {
     color: #50f148;
 }
 
+/* Underline only h2s that have a link and are not marked "no-underline" */
+h2:hover:has(a):not(.no-underline) {
+    text-decoration: underline;
+}
+
 a {
     color: #a1ac25;
+    text-decoration: none;
+}
+
+a:hover {
     text-decoration: underline;
 }
 
