@@ -1,22 +1,20 @@
-// Get the audio element and set the initial volume
+// Get elements
 const audio = document.getElementById('background-music');
+const volumeIcon = document.getElementById('volume-icon');
+const musicButton = document.getElementById('toggle-music');
+
+// Initial setup
 audio.volume = 0.3;
 let isPlaying = false;
 
-// Get the music button
-const musicButton = document.getElementById('toggle-music');
-
-// Set up the click event listener for toggling music
-musicButton.addEventListener('click', function () {
-    if (isPlaying == true) {
-        // Pause the music and update the button icon
+// Toggle music on button click
+musicButton.addEventListener('click', () => {
+    if (isPlaying) {
         audio.pause();
-        isPlaying = false;
-        musicButton.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>'; // Volume off
+        volumeIcon.src = '/assets/icons/volume-xmark-solid.svg'; // Volume off
     } else {
-        // Play the music and update the button icon
         audio.play();
-        isPlaying = true;
-        musicButton.innerHTML = '<i class="fa-solid fa-volume-high"></i>'; // Volume high
+        volumeIcon.src = '/assets/icons/volume-high-solid.svg'; // Volume on
     }
+    isPlaying = !isPlaying;
 });

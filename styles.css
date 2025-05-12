@@ -44,12 +44,17 @@ img {
     position: absolute;
     top: 20px;
     right: 20px;
-    padding: 3px 8px;
+    width: 32px;
+    height: 32px;
     background: #d3d3d3;
     border: 2px outset #a0a0a0;
     color: #000;
     cursor: pointer;
     transition: background 0.2s;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #toggle-music:hover {
@@ -58,4 +63,10 @@ img {
 
 #toggle-music:active {
     border: 2px inset #a0a0a0;
+}
+
+#toggle-music img {
+    width: 16px;
+    height: 16px;
+    display: block;
 }
