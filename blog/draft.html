@@ -14,78 +14,119 @@
 </head>
 
 <body>
-    <header>
-        <h1><a href="/"
-                style="text-decoration:none; color:inherit;">kevinschmidlin</a></h1>
-    </header>
-    <main class="container">
-        <h2>Out of Touch, Out of Time: Keeping Your OOB Comms Alive</h2>
-        <p><small>7 May 2025 · 4 min read</small></p>
+  <header>
+    <h1>
+      <a href="/" style="text-decoration: none; color: inherit;">
+        kevinschmidlin
+      </a>
+    </h1>
+  </header>
+
+  <main class="container">
+    <article>
+      <h2>Out of Touch, Out of Time: Keeping Your OOB Comms Alive</h2>
+      <p><small>7 May 2025 · 4 min read</small></p>
+
+      <section>
+        <h3>The Age of Reliance</h3>
         <p>
-            <h3>the age of reliance</h3>
-                    In most organisations, incident response chatter lives in
-                    the same tools used for daily collaboration—Teams pings,
-                    email threads, and ticket updates. But what happens when
-                    adversaries tune in? Advanced actors lurk in primary
-                    channels, slipping into calls, snooping on JIRA tickets, or
-                    auto-forwarding critical emails. Suddenly, your carefully
-                    orchestrated response is playing out on an open mic
+          In most organisations, incident response chatter lives in the same
+          tools used for daily collaboration—Teams pings, email threads, and
+          ticket updates. But what happens when adversaries tune in? Advanced
+          actors lurk in primary channels, slipping into calls, snooping on
+          JIRA tickets, or auto-forwarding critical emails. Suddenly, your
+          carefully orchestrated response is playing out on an open mic.
+        </p>
+      </section>
 
-                    <h3>to oob, or not to oob?</h3>
-                    Out-of-Band (OOB) communications are purpose-built channels,
-                    separate from your everyday platforms. They might be
-                    encrypted chat apps, standalone voice lines, or dedicated
-                    coordination spaces. The goal? Ensure that when threat
-                    actors crash your party, you’ve already moved the
-                    conversation to a safe room. Next-gen adversaries are
-                    operational-security savvy: they infiltrate incident calls,
-                    exploit primary channels, and set up forwarding rules to
-                    siphon intel
+      <section>
+        <h3>To OOB, or Not to OOB?</h3>
+        <p>
+          Out-of-Band (OOB) communications are purpose-built channels, separate
+          from your everyday platforms. They might be encrypted chat apps,
+          standalone voice lines, or dedicated coordination spaces. The goal?
+          Ensure that when threat actors crash your party, you’ve already moved
+          the conversation to a safe room. Next-gen adversaries are
+          operational-security savvy: they infiltrate incident calls, exploit
+          primary channels, and set up forwarding rules to siphon intel.
+        </p>
+      </section>
 
-                    <h3>cultivating your oob ecosystem</h3>
-An OOB solution isn’t “set and forget”—a wise man once told me it needs constant watering and feeding. Shoutout to Zane for that gem—still holds true today. In my experience, when an OOB channel goes untouched for months, teams begin to lose muscle memory: login credentials get buried, the activation process gets hazy, and in an incident, you race to reset passwords. I once watched in real time as an incident controller couldn’t recall the secondary workspace’s address or authentication flow—forcing us to scramble back into a confirmed compromised communication channel for precious minutes.
-Now, this may have been a simulation, but regular exercises, credential rotation, and periodic sanity checks are the lifeblood of a resilient OOB ecosystem.
-                    <h3>a proven blueprint</h3>
-                    Many teams champion an on-demand OOB suite—secure messaging
-                    plus a locked-down collaboration environment. For example,
-                    pairing Signal for encrypted chats with a secondary
-                    Workspace for file sharing. By keeping the Workspace dormant
-                    until an incident reaches a predefined severity threshold,
-                    you strike the balance between security and agility—tools
-                    are ready when needed, but invisible during normal
-                    operations
+      <section>
+        <h3>Cultivating Your OOB Ecosystem</h3>
+        <p>
+          An OOB solution isn’t “set and forget”—a wise man once told me it
+          needs constant watering and feeding. Shoutout to Zane for that gem—
+          still holds true today. In my experience, when an OOB channel goes
+          untouched for months, teams begin to lose muscle memory: login
+          credentials get buried, the activation process gets hazy, and in an
+          incident, you race to reset passwords. I once watched in real time as
+          an incident controller couldn’t recall the secondary workspace’s
+          address or authentication flow—forcing us to scramble back into a
+          confirmed compromised communication channel for precious minutes.
+        </p>
+        <p>
+          Now, this may have been a simulation, but regular exercises,
+          credential rotation, and periodic sanity checks are the lifeblood of
+          a resilient OOB ecosystem.
+        </p>
+      </section>
 
-                    <h3>mapping the workflow</h3>
-                    1. incident triggers → primary channels triage
-                    2. activation decision → Incident Controller greenlights OOB
-                    3. spin up OOB suite → Signal groups + secondary Workspace
-                    4. secure comms → chats, calls, file exchanges, audits
-                    5. demobilise → deactivate Workspace once all clear
+      <section>
+        <h3>A Proven Blueprint</h3>
+        <p>
+          Many teams champion an on-demand OOB suite—secure messaging plus a
+          locked-down collaboration environment. For example, pairing Signal for
+          encrypted chats with a secondary Workspace for file sharing. By
+          keeping the Workspace dormant until an incident reaches a predefined
+          severity threshold, you strike the balance between security and
+          agility—tools are ready when needed, but invisible during normal
+          operations.
+        </p>
+      </section>
 
-                    <h3>lessons learned</h3>
-                    • plan your fall-back early, not when smoke’s in the air.
-                    • gate OOB resources by default—activate on demand.
-                    • cultivate your channels: run regular drills, rotate
-                    credentials, and sanity-check log-ins.
-                    • document every transfer: chats as evidence, files hashed.
-                    • train hands-on: tools only shine when people know where to
-                    click.
+      <section>
+        <h3>Mapping the Workflow</h3>
+        <ol>
+          <li>Incident triggers → primary channels triage</li>
+          <li>Activation decision → Incident Controller greenlights OOB</li>
+          <li>Spin up OOB suite → Signal groups + secondary Workspace</li>
+          <li>Secure comms → chats, calls, file exchanges, audits</li>
+          <li>Demobilise → deactivate Workspace once all clear</li>
+        </ol>
+      </section>
 
-                    <h3>closing thoughts</h3>
-                    OOB communications aren’t a “nice to have”—they’re a
-                    survival skill. By decoupling your incident chatter from
-                    everyday traffic, you deny adversaries their easiest entry
-                    point. With clear activation gates, familiar UIs, scripted
-                    processes, and regular upkeep, teams can flip the switch to
-                    a resilient, out-of-band posture in minutes. Remember: when
-                    the next breach hits, the right action is the easiest
-                    action—and your playbooks should carry you, even when
-                    primary channels fail.
-                </p>
-                <p>
-                    <a href="/blog/">&larr; back to blog list</a>
-                </p>
-            </main>
-        </body>
+      <section>
+        <h3>Lessons Learned</h3>
+        <ul>
+          <li>Plan your fall-back early, not when smoke’s in the air.</li>
+          <li>Gate OOB resources by default—activate on demand.</li>
+          <li>
+            Cultivate your channels: run regular drills, rotate credentials,
+            and sanity-check log-ins.
+          </li>
+          <li>Document every transfer: chats as evidence, files hashed.</li>
+          <li>
+            Train hands-on: tools only shine when people know where to click.
+          </li>
+        </ul>
+      </section>
 
-    </html>
+      <section>
+        <h3>Closing Thoughts</h3>
+        <p>
+          OOB communications aren’t a “nice to have”—they’re a survival skill.
+          By decoupling your incident chatter from everyday traffic, you deny
+          adversaries their easiest entry point. With clear activation gates,
+          familiar UIs, scripted processes, and regular upkeep, teams can flip
+          the switch to a resilient, out-of-band posture in minutes. Remember:
+          when the next breach hits, the right action is the easiest action—
+          and your playbooks should carry you, even when primary channels
+          fail.
+        </p>
+      </section>
+    </article>
+
+    <p><a href="/blog/">← back to blog list</a></p>
+  </main>
+</body>
